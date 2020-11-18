@@ -1,0 +1,20 @@
+{
+    "forcast":[
+       {
+          "date":"01/01/2020 12:00 AM",
+          "town":"Tyson’s Corner",
+          "weather":"Cloudy"
+       },
+       {
+          "date":"01/01/2020 12:00 AM",
+          "town":"Reston",
+          "weather":"Cloudy"
+       },
+       {
+          "date":"01/01/2020 12:00 AM",
+          "town":"Fairfax",
+          "weather":"Rain"
+       }
+    ]
+ }
+ 

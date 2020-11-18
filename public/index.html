@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NOVA Weather</title>
+        <!-- Imports -->
+        <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="title" style="display: inline-block;">NOVA Weather</div>
+            <!-- Drop downs for filters-->
+            <div class="float-right filter">
+
+                <label for="town">Filter by </label>
+                <select name="town" id="town">
+                </select>
+                <label for="date"> or </label>
+                <select name="date" id="date">
+                </select>
+
+            </div>
+        </div>
+
+        <!-- Template used from https://webdesignerwall.com/wdw-snippet/bootstrap-4-weather-report-container-with-card-and-material-design-icons -->
+        <div class="page-content page-container" id="page-content">
+            <div class="padding">
+                <div class="row container d-flex justify-content-center">
+                    <div class="col-lg-10 grid-margin stretch-card">
+                        <!--weather card-->
+                        <div class="card card-weather">
+                            <div class="card-body">
+                                <div class="weather-date-location">
+                                    <h3><span id="cardTitle" class="town-name">
+                                    -
+                                    </span> </h3>
+                                </div>
+                                <div class="weather-data">
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <!-- this is where the search results will be printed-->
+                                <div id="contents" class="d-flex weakly-weather">
+                                </div>
+                            </div>
+                        </div>
+                        <!--weather card ends-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
